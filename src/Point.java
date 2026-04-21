@@ -29,6 +29,8 @@ public class Point {
     
     @Override
     public String toString() {
-    	return String.format("%s(%d,%d)",name,x,y);
+        
+    	return String.format("%s(%f,%f)",name,x,y);
+      
     }
 }

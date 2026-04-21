@@ -9,6 +9,16 @@ public class Line {
     this.b = b;
   }
 
+  public String getName(){
+
+    return name;
+  }
+
+   public void setName(String name){
+
+    this.name = name;
+  }
+
   public Point getA(){
     return a;
   }
@@ -25,7 +35,16 @@ public class Line {
     this.b = b;
   }
 
-  
+  public double getLength(){
+     
+    double dx = a.getX() - b.getY();
+    double dy = b.getY() - a.getX();
 
+    return Math.sqrt(Math.pow(dx,2)+Math.pow(dy,2));
+  }
 
+  // @Override
+  // public String toString(){
+  //  return String.format("%s(%f,%f)",name,a,b);
+  // }
 }

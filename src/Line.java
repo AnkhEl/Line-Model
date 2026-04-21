@@ -43,8 +43,10 @@ public class Line {
     return Math.sqrt(Math.pow(dx,2)+Math.pow(dy,2));
   }
 
-  // @Override
-  // public String toString(){
-  //  return String.format("%s(%f,%f)",name,a,b);
-  // }
+  @Override
+  public String toString(){
+   //return String.format("%s(%f,%f)",name,a,b);
+  return String.format("The line %s is made up of point %s and point %s ", name,this.a.getName(),this.b.getName());
+  }
+
 }

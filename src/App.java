@@ -5,6 +5,10 @@ public class App {
 
         Line l1 = new Line("line1", p1,p2);
 
+        System.out.println(l1.toString());
+
         System.out.printf("The length of %s is %f", l1.getName(),l1.getLength());
+
+        
     }
 }
